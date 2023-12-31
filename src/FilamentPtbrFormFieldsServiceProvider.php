@@ -2,10 +2,10 @@
 
 namespace Leandrocfe\FilamentPtbrFormFields;
 
-use Filament\FilamentServiceProvider;
 use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class FilamentPtbrFormFieldsServiceProvider extends FilamentServiceProvider
+class FilamentPtbrFormFieldsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -15,8 +15,6 @@ class FilamentPtbrFormFieldsServiceProvider extends FilamentServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('filament-ptbr-form-fields')
-            ->hasConfigFile()
-            ->hasViews();
+            ->name('filament-ptbr-form-fields');
     }
 }
